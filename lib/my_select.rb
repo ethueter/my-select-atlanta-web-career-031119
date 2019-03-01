@@ -1,8 +1,9 @@
 def my_select(collection)
  block_given?
  x = 0 
- 
- while x > collection.length 
+ new_array = []
+ if yield(collection[x]) == true 
+   new_array.push()
  
  end 
  
