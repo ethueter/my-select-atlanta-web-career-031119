@@ -3,9 +3,7 @@ def my_select(collection)
  x = 0 
  new_array = []
  while x > collection.length 
- new_array.push(yield(collection))
- new_array.select {|num| num.even?}
- 
+ new_array = yield(collection)
  end 
  new_array
 end
